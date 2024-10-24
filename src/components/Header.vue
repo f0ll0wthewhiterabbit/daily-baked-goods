@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// TODO:
+import BasketButton from './BasketButton.vue'
 </script>
 
 <template>
@@ -23,13 +23,40 @@
         </li>
       </ul>
     </nav>
-    <button></button>
+    <BasketButton />
   </header>
 </template>
 
 <style lang="scss" scoped>
 .header {
   height: 76px;
+
   padding: 0 96px 0 272px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  &__link {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #231f20;
+    letter-spacing: -0.7px;
+    text-decoration: none;
+    font-family: 'Lusitana', serif;
+    font-weight: 400;
+
+    &:visited {
+      color: #231f20;
+    }
+  }
 }
 </style>
