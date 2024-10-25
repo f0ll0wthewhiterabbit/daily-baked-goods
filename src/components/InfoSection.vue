@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import Contacts from './Contacts.vue'
 import SectionSubTitle from './SectionSubTitle.vue'
-
-// TODO:
 </script>
 
 <template>

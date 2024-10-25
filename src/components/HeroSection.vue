@@ -2,8 +2,6 @@
 import Header from './Header.vue'
 import ArrowSvg from './icons/ArrowSvg.vue'
 import SectionSubTitle from './SectionSubTitle.vue'
-
-// TODO:
 </script>
 
 <template>

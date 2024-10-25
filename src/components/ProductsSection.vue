@@ -19,6 +19,7 @@ import ProductCard from './ProductCard.vue'
 <style lang="scss" scoped>
 .products-section {
   padding: 96px 0;
+  overflow-x: hidden;
 
   &__list {
     display: flex;
