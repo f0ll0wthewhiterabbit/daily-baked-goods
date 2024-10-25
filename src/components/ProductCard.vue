@@ -38,18 +38,19 @@ function getImageUrl(imageName: string): string {
       <div class="product-card__quantity-selector">
         <button
           class="product-card__quantity-button"
+          type="button"
           @click="quantity -= 1"
           :disabled="quantity === 0"
         >
           <MinusSvg class="product-card__quantity-icon" />
         </button>
         <span class="product-card__quantity">{{ quantity }}</span>
-        <button class="product-card__quantity-button" @click="quantity += 1">
+        <button class="product-card__quantity-button" type="button" @click="quantity += 1">
           <PlusSvg class="product-card__quantity-icon" />
         </button>
       </div>
       <span class="product-card__price">${{ price }}</span>
-      <button class="product-card__add-button">
+      <button class="product-card__add-button" type="button">
         <PlusSvg class="product-card__add-icon" />
         Add To Cart
       </button>
