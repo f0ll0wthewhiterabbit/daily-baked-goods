@@ -4,6 +4,9 @@ import BasketButton from './BasketButton.vue'
 
 <template>
   <header class="header">
+    <a class="header__logo" href="#" aria-label="Daily Baked Goods">
+      <img src="../assets/images/logo.jpg" alt="Daily Baked Goods" />
+    </a>
     <nav>
       <ul class="header__list">
         <li>
@@ -30,11 +33,21 @@ import BasketButton from './BasketButton.vue'
 <style lang="scss" scoped>
 .header {
   height: 76px;
-
+  position: relative;
   padding: 0 96px 0 272px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &__logo {
+    display: block;
+    width: 128px;
+    height: 127px;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 64px;
+  }
 
   &__list {
     list-style: none;
