@@ -39,13 +39,19 @@ function getImageUrl(imageName: string): string {
         <button
           class="product-card__quantity-button"
           type="button"
-          @click="quantity -= 1"
+          aria-label="Decrease"
           :disabled="quantity === 0"
+          @click="quantity -= 1"
         >
           <MinusSvg class="product-card__quantity-icon" />
         </button>
         <span class="product-card__quantity">{{ quantity }}</span>
-        <button class="product-card__quantity-button" type="button" @click="quantity += 1">
+        <button
+          class="product-card__quantity-button"
+          type="button"
+          aria-label="Increase"
+          @click="quantity += 1"
+        >
           <PlusSvg class="product-card__quantity-icon" />
         </button>
       </div>

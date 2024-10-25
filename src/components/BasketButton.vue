@@ -6,7 +6,7 @@ const itemsInBasket = ref<number>(8)
 </script>
 
 <template>
-  <button class="basket-button" type="button">
+  <button class="basket-button" type="button" aria-label="Basket">
     <BasketSvg class="basket-button__icon" />
     <div class="basket-button__counter">{{ itemsInBasket }}</div>
   </button>

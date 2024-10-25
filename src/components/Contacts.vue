@@ -8,12 +8,12 @@ import InstagramSvg from './icons/InstagramSvg.vue'
     <h3 class="contacts__title">Follow Us</h3>
     <ul class="contacts__list">
       <li class="contacts__item">
-        <a class="contacts__link" href="#">
+        <a class="contacts__link" href="#" aria-label="Facebook">
           <FacebookSvg class="contacts__icon" />
         </a>
       </li>
       <li class="contacts__item">
-        <a class="contacts__link" href="#">
+        <a class="contacts__link" href="#" aria-label="Instagram">
           <InstagramSvg class="contacts__icon" />
         </a>
       </li>
