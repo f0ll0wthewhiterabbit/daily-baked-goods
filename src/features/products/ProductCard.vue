@@ -41,7 +41,7 @@ function getImageUrl(imageName: string): string {
         <button
           class="product-card__quantity-button"
           type="button"
-          aria-label="Decrease"
+          aria-label="Decrease quantity"
           :disabled="quantity === 0"
           @click="quantity -= 1"
         >
@@ -51,7 +51,7 @@ function getImageUrl(imageName: string): string {
         <button
           class="product-card__quantity-button"
           type="button"
-          aria-label="Increase"
+          aria-label="Increase quantity"
           @click="quantity += 1"
         >
           <PlusSvg class="product-card__quantity-icon" />
