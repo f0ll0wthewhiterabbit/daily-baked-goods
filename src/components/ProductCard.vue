@@ -20,7 +20,7 @@ function getImageUrl(imageName: string): string {
 </script>
 
 <template>
-  <li class="product-card">
+  <div class="product-card">
     <div class="product-card__image-wrapper">
       <img class="product-card__image" :src="getImageUrl(product.image)" alt="Product image" />
     </div>
@@ -61,7 +61,7 @@ function getImageUrl(imageName: string): string {
         Add To Cart
       </button>
     </footer>
-  </li>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -80,6 +80,7 @@ function getImageUrl(imageName: string): string {
   &__image {
     width: 352px;
     height: 322px;
+    user-select: none;
   }
 
   &__title {

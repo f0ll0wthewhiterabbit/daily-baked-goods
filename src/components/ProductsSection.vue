@@ -1,18 +1,28 @@
 <script setup lang="ts">
+import { Swiper, SwiperSlide } from 'swiper/vue'
 import { PRODUCTS } from '../constants/product.constants'
 import ProductCard from './ProductCard.vue'
 </script>
 
 <template>
   <section class="products-section">
-    <ul class="products-section__list">
-      <ProductCard
+    <Swiper
+      class="products-section__list"
+      role="list"
+      aria-live="polite"
+      :spaceBetween="32"
+      slidesPerView="auto"
+      grabCursor
+    >
+      <SwiperSlide
+        class="products-section__slide"
         v-for="product in PRODUCTS"
-        class="products-section__card"
         :key="product.id"
-        :product
-      />
-    </ul>
+        role="listitem"
+      >
+        <ProductCard class="products-section__card" :product />
+      </SwiperSlide>
+    </Swiper>
   </section>
 </template>
 
@@ -22,12 +32,11 @@ import ProductCard from './ProductCard.vue'
   overflow-x: hidden;
 
   &__list {
-    display: flex;
-    align-items: center;
-    gap: 32px;
     margin: 0 auto;
     padding: 0 64px;
-    list-style: none;
+  }
+
+  &__slide {
     width: max-content;
   }
 
