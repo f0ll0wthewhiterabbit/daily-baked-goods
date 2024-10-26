@@ -77,20 +77,20 @@ import SectionSubTitle from './SectionSubTitle.vue'
     width: 196px;
     height: 60px;
     text-decoration: none;
-    color: #231f20;
-    border: 1px solid #cf8c0b;
-    background-color: #cf8c0b1a;
-    text-shadow: 2px 2px #fff;
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color-transparent);
+    text-shadow: 2px 2px var(--color-white);
 
     &:visited {
-      color: #231f20;
+      color: var(--text-color);
     }
   }
 
   &__link-icon {
     width: 27px;
     height: 14px;
-    color: #cf8c0b;
+    color: var(--accent-color);
   }
 }
 </style>

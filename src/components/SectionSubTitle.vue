@@ -14,7 +14,7 @@ defineProps({
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  color: #cf8c0b;
+  color: var(--accent-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +25,7 @@ defineProps({
   &::after {
     width: 16px;
     height: 1px;
-    background-color: #cf8c0b;
+    background-color: var(--accent-color);
     display: block;
     content: '';
   }

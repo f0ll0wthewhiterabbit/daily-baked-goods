@@ -16,7 +16,7 @@ const itemsInCart = inject<number>('itemsInCart')
 .cart-button {
   width: 44px;
   height: 44px;
-  background-color: #fff;
+  background-color: var(--color-white);
   border: none;
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@ const itemsInCart = inject<number>('itemsInCart')
     position: absolute;
     top: -2px;
     left: -2px;
-    background-color: #fff;
+    background-color: var(--color-white);
     width: 48px;
     height: 48px;
     clip-path: polygon(
@@ -106,7 +106,7 @@ const itemsInCart = inject<number>('itemsInCart')
   }
 
   &__icon {
-    color: #231f20;
+    color: var(--text-color);
     width: 20px;
     height: 20px;
     z-index: 5;
@@ -117,13 +117,13 @@ const itemsInCart = inject<number>('itemsInCart')
     top: 0;
     right: 0;
     border-radius: 50%;
-    background-color: #231f20;
+    background-color: var(--text-color);
     font-family: 'Lusitana', serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: -0.56px;
-    color: #fff;
+    color: var(--color-white);
     width: 24px;
     height: 24px;
     transform: translate(50%, -50%);

@@ -62,14 +62,14 @@ import { SECTION_IDS } from '../constants/navigation.constants'
   &__link {
     font-size: 20px;
     line-height: 1.4;
-    color: #231f20;
+    color: var(--text-color);
     letter-spacing: -0.7px;
     text-decoration: none;
     font-family: 'Lusitana', serif;
     font-weight: 400;
 
     &:visited {
-      color: #231f20;
+      color: var(--text-color);
     }
   }
 }

@@ -33,7 +33,6 @@ import InstagramSvg from './icons/InstagramSvg.vue'
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: #231f20;
     margin: 0;
     display: flex;
     align-items: center;
@@ -45,7 +44,7 @@ import InstagramSvg from './icons/InstagramSvg.vue'
       content: '';
       width: 80px;
       height: 1px;
-      background-color: #cf8c0b;
+      background-color: var(--accent-color);
       display: block;
     }
   }
@@ -62,10 +61,10 @@ import InstagramSvg from './icons/InstagramSvg.vue'
 
   &__link {
     text-decoration: none;
-    color: #231f20;
+    color: var(--text-color);
 
     &:visited {
-      color: #231f20;
+      color: var(--text-color);
     }
   }
 

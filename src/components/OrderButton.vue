@@ -7,13 +7,13 @@
   height: 52px;
   width: 157px;
   padding: 8px;
-  background-color: #cf8c0b1a;
+  background-color: var(--accent-color-transparent);
   transform: rotate(-90deg) translate(-48px, 100%);
   position: fixed;
   right: -9px;
   top: 157px;
   border: none;
-  color: #cf8c0b;
+  color: var(--accent-color);
   font-family: 'Lusitana', serif;
   font-weight: 700;
   font-size: 16px;

@@ -115,7 +115,7 @@ function getImageUrl(imageName: string): string {
   &__select {
     height: 40px;
     padding: 8px 44px 8px 24px;
-    background-color: #cf8c0b1a;
+    background-color: var(--accent-color-transparent);
     border-radius: 64px;
     border: none;
     font-family: 'Jost', sans-serif;
@@ -133,7 +133,7 @@ function getImageUrl(imageName: string): string {
     right: 22px;
     width: 12px;
     height: 8px;
-    color: #cf8c0b;
+    color: var(--accent-color);
     transform: translateY(-50%);
     pointer-events: none;
   }
@@ -144,7 +144,7 @@ function getImageUrl(imageName: string): string {
     gap: 16px;
     height: 40px;
     padding: 0 16px;
-    background-color: #cf8c0b1a;
+    background-color: var(--accent-color-transparent);
     border-radius: 64px;
   }
 
@@ -155,7 +155,7 @@ function getImageUrl(imageName: string): string {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #cf8c0b;
+    color: var(--accent-color);
     padding: 0;
     height: 24px;
 
@@ -187,7 +187,7 @@ function getImageUrl(imageName: string): string {
   &__add-button {
     grid-column: 1 / -1;
     height: 56px;
-    background-color: #cf8c0b1a;
+    background-color: var(--accent-color-transparent);
     border: none;
     display: flex;
     align-items: center;
@@ -197,7 +197,7 @@ function getImageUrl(imageName: string): string {
   }
 
   &__add-icon {
-    color: #cf8c0b;
+    color: var(--accent-color);
     width: 15px;
     height: 15px;
   }
