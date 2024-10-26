@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed, inject, PropType, ref } from 'vue'
-import ChevronSvg from './icons/ChevronSvg.vue'
-import MinusSvg from './icons/MinusSvg.vue'
-import PlusSvg from './icons/PlusSvg.vue'
-import { Product } from '../interfaces/product.interface'
+import ChevronSvg from './ChevronSvg.vue'
+import MinusSvg from './MinusSvg.vue'
+import PlusSvg from './PlusSvg.vue'
+import { Product } from './product.interface'
 
 const props = defineProps({
   product: { type: Object as PropType<Product>, required: true },
@@ -17,7 +17,7 @@ const pack = ref<number>(props.product.availablePacks[0])
 const price = computed<number>(() => props.product.price * quantity.value * pack.value)
 
 function getImageUrl(imageName: string): string {
-  return new URL(`../assets/images/${imageName}`, import.meta.url).href
+  return new URL(`../../assets/images/${imageName}`, import.meta.url).href
 }
 </script>
 

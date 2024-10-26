@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { PRODUCTS } from '../constants/product.constants'
+import { SECTION_IDS } from '../../constants'
+import { PRODUCTS } from './product.constants'
 import ProductCard from './ProductCard.vue'
-import { SECTION_IDS } from '../constants/navigation.constants'
 </script>
 
 <template>

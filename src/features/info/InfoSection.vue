@@ -1,42 +1,40 @@
 <script setup lang="ts">
-import { SECTION_IDS } from '../constants/navigation.constants'
-import Header from './Header.vue'
-import ArrowSvg from './icons/ArrowSvg.vue'
-import SectionSubTitle from './SectionSubTitle.vue'
+import { SectionSubTitle } from '../../common'
+import { SECTION_IDS } from '../../constants'
+import Contacts from './Contacts.vue'
 </script>
 
 <template>
-  <section class="hero-section">
-    <Header />
-    <div class="hero-section__content">
-      <SectionSubTitle class="hero-section__sub-title" text="bonjour" />
-      <h1 class="hero-section__title">
-        Serving Baked Goods <span class="hero-section__bold-text">Every Day</span>
-      </h1>
-      <p class="hero-section__paragraph">
+  <section class="info-section" :id="SECTION_IDS.INFO">
+    <div class="info-section__content">
+      <SectionSubTitle class="info-section__sub-title" text="patisserie" />
+      <h1 class="info-section__title">Lorem Ipsum</h1>
+      <p class="info-section__paragraph">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat.
       </p>
-      <a class="hero-section__link" :href="`#${SECTION_IDS.PRODUCTS}`">
-        Shop Now <ArrowSvg class="hero-section__link-icon" />
-      </a>
+      <p class="info-section__paragraph">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <Contacts />
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
-.hero-section {
-  height: 1000px;
-  background: url('../assets/images/hero-background.jpg') no-repeat center / cover;
+.info-section {
+  padding: 192px 0 96px;
 
   &__content {
-    width: 716px;
+    width: 720px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 175px auto 0;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -46,11 +44,11 @@ import SectionSubTitle from './SectionSubTitle.vue'
 
   &__title {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 96px;
     line-height: 1;
     letter-spacing: -3.36px;
-    margin: 0 0 32px;
+    margin: 0 0 24px;
   }
 
   &__bold-text {
@@ -58,7 +56,11 @@ import SectionSubTitle from './SectionSubTitle.vue'
   }
 
   &__paragraph {
-    margin: 0 0 32px;
+    margin: 0 0 24px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
   }
 
   &__link {

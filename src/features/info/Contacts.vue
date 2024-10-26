@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import FacebookSvg from './icons/FacebookSvg.vue'
-import InstagramSvg from './icons/InstagramSvg.vue'
+import FacebookSvg from './FacebookSvg.vue'
+import InstagramSvg from './InstagramSvg.vue'
 </script>
 
 <template>

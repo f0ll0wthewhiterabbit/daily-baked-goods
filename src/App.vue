@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { provide, ref } from 'vue'
-import HeroSection from './components/HeroSection.vue'
-import InfoSection from './components/InfoSection.vue'
-import OrderButton from './components/OrderButton.vue'
-import ProductsSection from './components/ProductsSection.vue'
+import { HeroSection } from './features/hero'
+import { InfoSection } from './features/info'
+import { ProductsSection } from './features/products'
+import { OrderButton } from './common'
 
 const itemsInCart = ref<number>(0)
 

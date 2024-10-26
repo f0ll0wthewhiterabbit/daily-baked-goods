@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CartSvg from './icons/CartSvg.vue'
+import CartSvg from './CartSvg.vue'
 import { inject } from 'vue'
 
 const itemsInCart = inject<number>('itemsInCart')

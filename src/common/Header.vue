@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CartButton from './CartButton.vue'
+import { CartButton } from '../features/cart'
 import { SECTION_IDS } from '../constants/navigation.constants'
 </script>
 
