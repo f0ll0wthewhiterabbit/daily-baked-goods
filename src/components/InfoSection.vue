@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import { SECTION_IDS } from '../constants/navigation.constants'
 import Contacts from './Contacts.vue'
 import SectionSubTitle from './SectionSubTitle.vue'
 </script>
 
 <template>
-  <section class="info-section">
+  <section class="info-section" :id="SECTION_IDS.INFO">
     <div class="info-section__content">
       <SectionSubTitle class="info-section__sub-title" text="patisserie" />
       <h1 class="info-section__title">Lorem Ipsum</h1>

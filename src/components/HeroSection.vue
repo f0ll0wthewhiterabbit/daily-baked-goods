@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { SECTION_IDS } from '../constants/navigation.constants'
 import Header from './Header.vue'
 import ArrowSvg from './icons/ArrowSvg.vue'
 import SectionSubTitle from './SectionSubTitle.vue'
@@ -17,7 +18,7 @@ import SectionSubTitle from './SectionSubTitle.vue'
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat.
       </p>
-      <a class="hero-section__link" href="#">
+      <a class="hero-section__link" :href="`#${SECTION_IDS.PRODUCTS}`">
         Shop Now <ArrowSvg class="hero-section__link-icon" />
       </a>
     </div>

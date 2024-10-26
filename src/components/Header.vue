@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import BasketButton from './BasketButton.vue'
+import { SECTION_IDS } from '../constants/navigation.constants'
 </script>
 
 <template>
@@ -10,10 +11,10 @@ import BasketButton from './BasketButton.vue'
     <nav>
       <ul class="header__list">
         <li>
-          <a class="header__link" href="#">Store</a>
+          <a class="header__link" :href="`#${SECTION_IDS.PRODUCTS}`">Store</a>
         </li>
         <li>
-          <a class="header__link" href="#">About</a>
+          <a class="header__link" :href="`#${SECTION_IDS.INFO}`">About</a>
         </li>
         <li>
           <a class="header__link" href="#">Shipping</a>

@@ -2,10 +2,11 @@
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { PRODUCTS } from '../constants/product.constants'
 import ProductCard from './ProductCard.vue'
+import { SECTION_IDS } from '../constants/navigation.constants'
 </script>
 
 <template>
-  <section class="products-section">
+  <section class="products-section" :id="SECTION_IDS.PRODUCTS">
     <Swiper
       class="products-section__list"
       role="list"
