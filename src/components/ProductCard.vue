@@ -90,12 +90,11 @@ function getImageUrl(imageName: string): string {
     font-weight: 600;
     font-size: 24px;
     margin: 0 0 8px;
-    letter-spacing: -0.84px;
     line-height: 1.2;
+    letter-spacing: -0.84px;
   }
 
   &__paragraph {
-    font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -118,7 +117,6 @@ function getImageUrl(imageName: string): string {
     background-color: var(--accent-color-transparent);
     border-radius: 64px;
     border: none;
-    font-family: 'Jost', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.333333;
@@ -171,7 +169,6 @@ function getImageUrl(imageName: string): string {
   &__quantity,
   &__price,
   &__add-button {
-    font-family: 'Jost', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.333333;

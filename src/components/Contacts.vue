@@ -29,9 +29,7 @@ import InstagramSvg from './icons/InstagramSvg.vue'
   justify-content: space-between;
 
   &__title {
-    font-family: 'Jost', sans-serif;
     font-weight: 500;
-    font-size: 20px;
     line-height: 1.2;
     margin: 0;
     display: flex;

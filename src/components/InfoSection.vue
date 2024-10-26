@@ -46,6 +46,7 @@ import SectionSubTitle from './SectionSubTitle.vue'
     font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
     font-size: 96px;
+    line-height: 1;
     letter-spacing: -3.36px;
     margin: 0 0 24px;
   }
@@ -55,10 +56,6 @@ import SectionSubTitle from './SectionSubTitle.vue'
   }
 
   &__paragraph {
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.4;
     margin: 0 0 24px;
 
     &:last-of-type {
@@ -68,10 +65,7 @@ import SectionSubTitle from './SectionSubTitle.vue'
 
   &__link {
     display: block;
-    font-family: 'Jost', sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.4;
     display: flex;
     align-items: center;
     justify-content: center;

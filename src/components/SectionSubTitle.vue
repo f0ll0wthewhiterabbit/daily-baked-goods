@@ -12,7 +12,6 @@ defineProps({
 .section-sub-title {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
-  font-size: 20px;
   line-height: 1.2;
   color: var(--accent-color);
   display: flex;
