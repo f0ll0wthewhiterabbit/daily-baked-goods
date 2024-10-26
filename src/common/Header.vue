@@ -5,7 +5,7 @@ import { SECTION_IDS } from '../constants/navigation.constants'
 
 <template>
   <header class="header">
-    <a class="header__logo" href="#" aria-label="Daily Baked Goods">
+    <a class="header__logo" href="/" aria-label="Daily Baked Goods">
       <img src="../assets/images/logo.jpg" alt="Daily Baked Goods" />
     </a>
     <nav>
