@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import BasketSvg from './icons/BasketSvg.vue'
+import CartSvg from './icons/CartSvg.vue'
+import { inject } from 'vue'
 
-const itemsInBasket = ref<number>(8)
+const itemsInCart = inject<number>('itemsInCart')
 </script>
 
 <template>
-  <button class="basket-button" type="button" aria-label="Basket">
-    <BasketSvg class="basket-button__icon" />
-    <div class="basket-button__counter">{{ itemsInBasket }}</div>
+  <button class="cart-button" type="button" aria-label="Cart">
+    <CartSvg class="cart-button__icon" />
+    <div v-if="itemsInCart" class="cart-button__counter">{{ itemsInCart }}</div>
   </button>
 </template>
 
 <style lang="scss" scoped>
-.basket-button {
+.cart-button {
   width: 44px;
   height: 44px;
   background-color: #fff;

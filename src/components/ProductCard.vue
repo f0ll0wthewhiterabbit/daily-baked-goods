@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, PropType, ref } from 'vue'
+import { computed, inject, PropType, ref } from 'vue'
 import ChevronSvg from './icons/ChevronSvg.vue'
 import MinusSvg from './icons/MinusSvg.vue'
 import PlusSvg from './icons/PlusSvg.vue'
@@ -8,6 +8,8 @@ import { Product } from '../interfaces/product.interface'
 const props = defineProps({
   product: { type: Object as PropType<Product>, required: true },
 })
+
+const addToCart = inject<() => void>('addToCart')
 
 const quantity = ref<number>(5)
 const pack = ref<number>(props.product.availablePacks[0])
@@ -56,7 +58,7 @@ function getImageUrl(imageName: string): string {
         </button>
       </div>
       <span class="product-card__price">${{ price }}</span>
-      <button class="product-card__add-button" type="button">
+      <button class="product-card__add-button" type="button" @click="addToCart">
         <PlusSvg class="product-card__add-icon" />
         Add To Cart
       </button>

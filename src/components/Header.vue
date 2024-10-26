@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BasketButton from './BasketButton.vue'
+import CartButton from './CartButton.vue'
 import { SECTION_IDS } from '../constants/navigation.constants'
 </script>
 
@@ -27,7 +27,7 @@ import { SECTION_IDS } from '../constants/navigation.constants'
         </li>
       </ul>
     </nav>
-    <BasketButton />
+    <CartButton />
   </header>
 </template>
 
